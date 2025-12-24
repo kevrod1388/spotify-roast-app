@@ -14,11 +14,11 @@ load_dotenv(dotenv_path=".env")
 
 
 # DEBUG: Check if keys are loading
-st.write("Debug - Client ID:", os.getenv("SPOTIPY_CLIENT_ID"))
-st.write("Debug - Client Secret starts with:", os.getenv("SPOTIPY_CLIENT_SECRET")[:4] if os.getenv("SPOTIPY_CLIENT_SECRET") else "None")
-st.write("Current working directory:", os.getcwd())
-st.write("Files in directory:", os.listdir())
-st.write("Secret length:", len(os.getenv("SPOTIPY_CLIENT_SECRET") or "None"))
+#st.write("Debug - Client ID:", os.getenv("SPOTIPY_CLIENT_ID"))
+#st.write("Debug - Client Secret starts with:", os.getenv("SPOTIPY_CLIENT_SECRET")[:4] if os.getenv("SPOTIPY_CLIENT_SECRET") else "None")
+#st.write("Current working directory:", os.getcwd())
+#st.write("Files in directory:", os.listdir())
+#st.write("Secret length:", len(os.getenv("SPOTIPY_CLIENT_SECRET") or "None"))
 
 
 #st.write("Client ID:", os.getenv("SPOTIFY_CLIENT_ID"))
@@ -112,7 +112,7 @@ if playlist_url:  # (check if input exists)
                 st.session_state.tracks = tracks
                 st.session_state.total_songs = len(tracks)
 
-                st.success(f"Saved {st.session_state.total_songs} songs to memory! Ready for next steps.")
+                st.success(f"Saved {st.session_state.total_songs} songs to memory! Ready to ROAST.")
 
                 st.markdown("---")
 
